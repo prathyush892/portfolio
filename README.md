@@ -15,7 +15,7 @@ portfolio/
 │   ├── styles/
 │   │   └── global.css          # CSS variables, base styles, utilities
 │   ├── data/
-│   │   └── portfolioData.js    # ✏️  All your content lives here
+│   │   └── portfolioData.js    # ✏️  All content lives here
 │   ├── hooks/
 │   │   └── useAnimations.js    # useReveal, useCounter, useParallax, useCursor...
 │   ├── components/
