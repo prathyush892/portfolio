@@ -1,0 +1,34 @@
+.footer {
+  padding: 36px 60px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  position: relative;
+  z-index: 1;
+  background: var(--bg);
+}
+
+.logo {
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+}
+
+.copy { text-align: center; }
+
+.version { opacity: 0.5; }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    padding: 28px 24px;
+  }
+  .copy { font-size: 0.65rem; }
+}

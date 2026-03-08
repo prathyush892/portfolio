@@ -1,0 +1,38 @@
+.cursor {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease, background 0.2s;
+  mix-blend-mode: screen;
+}
+
+.cursor.hovered {
+  transform: translate(-50%, -50%) scale(2.5);
+}
+
+.ring {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid rgba(0, 200, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease;
+}
+
+.ring.ringHovered {
+  width: 70px;
+  height: 70px;
+  border-color: rgba(0, 200, 255, 0.3);
+}
+
+@media (max-width: 768px) {
+  .cursor, .ring { display: none; }
+}

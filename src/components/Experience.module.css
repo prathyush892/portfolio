@@ -1,0 +1,102 @@
+.experience {
+  background: var(--bg2);
+  position: relative;
+  z-index: 1;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 40px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 8px; bottom: 8px;
+  width: 1px;
+  background: linear-gradient(to bottom, var(--accent), var(--accent2), transparent);
+}
+
+.item {
+  position: relative;
+  margin-bottom: 60px;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.item:last-child { margin-bottom: 0; }
+
+/* DOT */
+.dot {
+  position: absolute;
+  left: -46px; top: 8px;
+  width: 12px; height: 12px;
+  border-radius: 50%;
+  border: 2px solid var(--bg2);
+}
+.dot_blue   { background: var(--accent);  box-shadow: 0 0 15px rgba(0,200,255,0.6); }
+.dot_purple { background: var(--accent2); box-shadow: 0 0 15px rgba(123,92,255,0.6); }
+.dot_pink   { background: var(--accent3); box-shadow: 0 0 15px rgba(255,60,111,0.6); }
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.company {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+.role {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  margin-top: 4px;
+}
+.period {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 4px 12px;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* BULLETS */
+.bullets {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bullets li {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+  line-height: 1.7;
+  padding-left: 20px;
+  position: relative;
+}
+.bullets li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .header { flex-direction: column; }
+}

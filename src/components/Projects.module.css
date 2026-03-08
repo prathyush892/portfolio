@@ -1,0 +1,83 @@
+.projects { position: relative; z-index: 1; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 36px;
+  position: relative;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  clip-path: var(--clip-card-lg);
+  text-decoration: none;
+  display: block;
+  overflow: hidden;
+  cursor: none;
+}
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, var(--project-accent, var(--accent)), transparent);
+}
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(0, 200, 255, 0.22);
+}
+
+.cardNum {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted);
+  letter-spacing: 0.15em;
+  margin-bottom: 16px;
+  opacity: 0.6;
+  text-transform: uppercase;
+}
+.cardTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+.cardDesc {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;
+  font-size: 1.2rem;
+  color: var(--muted);
+  transition: color 0.2s, transform 0.2s;
+}
+.card:hover .arrow {
+  color: var(--accent);
+  transform: translate(4px, -4px);
+}
+
+.cta {
+  margin-top: 48px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+}
