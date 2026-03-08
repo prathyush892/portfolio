@@ -15,7 +15,7 @@ portfolio/
 │   ├── styles/
 │   │   └── global.css          # CSS variables, base styles, utilities
 │   ├── data/
-│   │   └── portfolioData.js    # ✏️  All content lives here
+│   │   └── portfolioData.js    # ✏️  All your content lives here
 │   ├── hooks/
 │   │   └── useAnimations.js    # useReveal, useCounter, useParallax, useCursor...
 │   ├── components/
@@ -71,6 +71,50 @@ Replace the initials placeholder in `About.jsx`:
 ```
 Drop `photo.jpg` in `/public`.
 
+### Add your GitHub link
+In `portfolioData.js`:
+```js
+github: 'https://github.com/YOUR_USERNAME',
+```
+
+### Add your resume download
+In `portfolioData.js` add `resumeUrl`, then update the button in `Contact.jsx`:
+```jsx
+<a href={personalInfo.resumeUrl} download className="btn-primary">
+  Download Resume
+</a>
+```
+Drop your `resume.pdf` in `/public`.
+
+---
+
+## 🌐 Deployment
+
+### Vercel (recommended — free)
+```bash
+npm install -g vercel
+npm run build
+vercel --prod
+```
+
+### Netlify
+```bash
+npm run build
+# Drag & drop the /build folder to netlify.com/drop
+```
+
+### GitHub Pages
+```bash
+npm install --save-dev gh-pages
+
+# Add to package.json:
+# "homepage": "https://YOUR_USERNAME.github.io/portfolio",
+# "predeploy": "npm run build",
+# "deploy": "gh-pages -d build"
+
+npm run deploy
+```
+
 ---
 
 ## ✨ Features
@@ -99,4 +143,4 @@ Drop `photo.jpg` in `/public`.
 
 ---
 
-*Built by Prathyush Prathipati · Toronto, ON*
+*Built for Prathyush Prathipati · Toronto, ON*
