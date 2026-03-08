@@ -27,14 +27,13 @@ export default function Projects() {
         </div>
 
         <div className={styles.grid} ref={gridRef}>
-          {projects.map((proj, i) => (
-            <a
+          {projects.map((proj) => (
+            <div
               key={proj.title}
-              href={proj.link}
               className={`reveal ${styles.card}`}
               data-reveal-item
               style={{ '--project-accent': proj.accentColor }}
-              onClick={(e) => e.preventDefault()}
+              role="article"
             >
               <div className={styles.cardNum}>
                 {proj.num} / {proj.category}
@@ -49,7 +48,7 @@ export default function Projects() {
                 ))}
               </div>
               <span className={styles.arrow}>↗</span>
-            </a>
+            </div>
           ))}
         </div>
 

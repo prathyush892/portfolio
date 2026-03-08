@@ -28,7 +28,7 @@ export default function About() {
                 <span className={styles.initials}>PP</span>
               </div>
               <div className={styles.cardName}>{personalInfo.name}</div>
-              <div className={styles.cardRole}>// Frontend Developer & UI Engineer</div>
+              <div className={styles.cardRole}>{'// Frontend Developer & UI Engineer'}</div>
               <div className={styles.cardLocation}>📍 {personalInfo.location}</div>
               <div className={styles.cardTags}>
                 {['React', 'Next.js', 'TypeScript', 'UI/UX'].map((t) => (

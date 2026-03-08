@@ -29,7 +29,7 @@ export default function Experience() {
               <div className={styles.header}>
                 <div>
                   <div className={styles.company}>{exp.company}</div>
-                  <div className={styles.role}>// {exp.role}</div>
+                  <div className={styles.role}>{'// '}{exp.role}</div>
                 </div>
                 <div className={styles.period}>{exp.period}</div>
               </div>
