@@ -4,8 +4,8 @@
 
 export const personalInfo = {
   name: 'Prathyush Prathipati',
-  role: 'Frontend Developer',
-  tagline: 'Frontend Dev.',
+  role: 'React Developer',
+  tagline: 'React Dev.',
   location: 'Toronto, Ontario, Canada',
   email: 'prathipati.prathyush@gmail.com',
   phone: '905-449-8920',
@@ -13,7 +13,7 @@ export const personalInfo = {
   github: 'https://github.com/', // Replace with your actual GitHub URL
   availableFor: 'Available for work · Toronto, ON',
   bio: [
-    'A frontend developer with 8+ years of experience delivering clean, performant, and accessible web applications across fintech, real estate, and enterprise sectors.',
+    'A React developer with 8+ years of experience delivering clean, performant, and accessible web applications across fintech, real estate, and enterprise sectors.',
     'I bridge the gap between design and engineering — translating wireframes into pixel-perfect, scalable interfaces with React, Next.js and modern tooling. I led teams at Wavemaker Inc., built community engagement platforms at Hedgehog Lab, and have since expanded into full-stack development with Node.js, PostgreSQL and cloud infrastructure.',
     'Currently based in Toronto and open to opportunities in product-focused teams that value quality and craftsmanship.',
   ],
@@ -35,7 +35,7 @@ export const skillBars = [
 export const skillCards = [
   {
     icon: '⚛️',
-    title: 'Frontend Engineering',
+    title: 'React Developer',
     desc: 'Building responsive, performant, and accessible user interfaces with modern JavaScript frameworks.',
     color: 'blue',
     pills: ['React JS', 'Next.js', 'TypeScript', 'Redux', 'Vue.js', 'AngularJS'],
@@ -127,7 +127,7 @@ export const projects = [
       { label: 'Recharts', color: 'purple' },
     ],
     accentColor: 'var(--accent)',
-    link: '#',
+    link: 'http://localhost:3001',
   },
   {
     num: '02',

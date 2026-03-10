@@ -70,7 +70,7 @@ export default function Hero() {
           <span className={styles.line}>
             <span className={styles.glitch} data-text="Prathipati">Prathipati</span>
           </span>
-          <span className={`${styles.line} ${styles.dimLine}`}>Frontend Dev.</span>
+          <span className={`${styles.line} ${styles.dimLine}`}>React Dev.</span>
         </h1>
 
         <p className={styles.heroDesc}>

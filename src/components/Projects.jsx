@@ -31,6 +31,9 @@ export default function Projects() {
             <div
               key={proj.title}
               className={`reveal ${styles.card}`}
+              href={proj.link}
+              target="_blank"
+              rel="noopener noreferrer"
               data-reveal-item
               style={{ '--project-accent': proj.accentColor }}
               role="article"

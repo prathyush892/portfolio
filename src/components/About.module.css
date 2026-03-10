@@ -93,7 +93,6 @@
 .tag:hover { border-color: var(--accent); color: var(--accent); }
 
 /* BIO */
-.contentCol {}
 .bio {
   font-family: var(--font-mono);
   font-size: 0.88rem;
@@ -109,7 +108,6 @@
 /* BARS */
 .barsWrap { display: flex; flex-direction: column; gap: 14px; }
 
-.barItem {}
 .barHeader {
   display: flex;
   justify-content: space-between;
