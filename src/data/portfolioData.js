@@ -127,7 +127,7 @@ export const projects = [
       { label: 'Recharts', color: 'purple' },
     ],
     accentColor: 'var(--accent)',
-    link: 'http://localhost:3001',
+    link: 'https://nexbank-ashy.vercel.app/',
   },
   {
     num: '02',
