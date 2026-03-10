@@ -30,13 +30,12 @@ export default function Projects() {
           {projects.map((proj) => (
             <div
               key={proj.title}
-              className={`reveal ${styles.card}`}
-              href={proj.link}
+              href={proj.link || '#'}
               target="_blank"
               rel="noopener noreferrer"
+              className={`reveal ${styles.card}`}
               data-reveal-item
               style={{ '--project-accent': proj.accentColor }}
-              role="article"
             >
               <div className={styles.cardNum}>
                 {proj.num} / {proj.category}
