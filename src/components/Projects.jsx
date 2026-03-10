@@ -28,7 +28,7 @@ export default function Projects() {
 
         <div className={styles.grid} ref={gridRef}>
           {projects.map((proj) => (
-            <div
+            <a
               key={proj.title}
               href={proj.link || '#'}
               target="_blank"
@@ -50,7 +50,7 @@ export default function Projects() {
                 ))}
               </div>
               <span className={styles.arrow}>↗</span>
-            </div>
+            </a>
           ))}
         </div>
 
