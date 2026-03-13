@@ -141,7 +141,7 @@ export const projects = [
       { label: 'Sanity CMS', color: 'red' },
     ],
     accentColor: 'var(--accent2)',
-    link: '#',
+    link: 'https://axiom-kappa-tan.vercel.app/',
   },
   {
     num: '03',
