@@ -132,7 +132,7 @@ export const projects = [
   {
     num: '02',
     category: 'Branding Agency',
-    title: 'Axiom Creative Studio',
+    title: 'Axiom Brand Studio',
     desc: 'Full-featured branding agency website with animated case studies, parallax hero, client testimonials, and a dynamic project showcase built with Next.js.',
     pills: [
       { label: 'Next.js', color: 'purple' },
@@ -155,7 +155,7 @@ export const projects = [
       { label: 'Jest', color: 'green' },
     ],
     accentColor: 'var(--accent3)',
-    link: '#',
+    link: 'https://ui-tool-kit.vercel.app/',
   },
   {
     num: '04',

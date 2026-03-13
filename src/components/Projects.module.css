@@ -16,7 +16,6 @@
   text-decoration: none;
   display: block;
   overflow: hidden;
-  cursor: pointer;
 }
 .card::before {
   content: '';
