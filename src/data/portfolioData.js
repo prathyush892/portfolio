@@ -30,6 +30,7 @@ export const skillBars = [
   { label: 'React / Next.js', value: 92 },
   { label: 'Full-Stack (Node + PostgreSQL)', value: 78 },
   { label: 'UI/UX & Accessibility', value: 88 },
+  { label: 'Vibe Coding, LLM Integration', value: 80 },
 ];
 
 export const skillCards = [
@@ -177,6 +178,7 @@ export const marqueeItems = [
   'React JS', 'Next.js', 'TypeScript', 'Redux', 'Vue.js',
   'Node.js', 'PostgreSQL', 'Docker', 'Kubernetes', 'WordPress',
   'Figma', 'AWS CI/CD', 'Tailwind CSS', 'GraphQL', 'REST API',
+  'Vibe Coding', 'LLM Integration', 'Prompt Engineering'
 ];
 
 export const contactLinks = [
