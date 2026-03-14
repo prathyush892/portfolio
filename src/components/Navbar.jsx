@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <nav className={`${styles.nav} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.logo}>
-        PP<span className={styles.logoAccent}>.</span>dev
+        P<span className={styles.logoAccent}>.</span>dev
       </div>
 
       <ul className={`${styles.navLinks} ${menuOpen ? styles.open : ''}`}>

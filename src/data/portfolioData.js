@@ -202,6 +202,6 @@ export const contactLinks = [
     icon: '⬡',
     label: 'GitHub',
     value: 'github.com/prathyush-dev',
-    href: 'https://github.com/',
+    href: 'https://github.com/prathyush892',
   },
 ];

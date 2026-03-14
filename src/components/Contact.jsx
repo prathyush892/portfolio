@@ -24,12 +24,13 @@ export default function Contact() {
               Toronto or remote. Let's create something exceptional together.
             </p>
             <div className={styles.btnWrap}>
-              <button
+              <a
                 className="btn-primary"
-                onClick={() => alert('Add your resume PDF path in portfolioData.js')}
+                href="/Prathyush-ReactDev.pdf" 
+                download="Prathyush-ReactDev.pdf"
               >
                 Download Resume
-              </button>
+              </a>
             </div>
           </div>
 
