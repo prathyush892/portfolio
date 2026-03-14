@@ -9,8 +9,8 @@ export const personalInfo = {
   location: 'Toronto, Ontario, Canada',
   email: 'prathipati.prathyush@gmail.com',
   phone: '905-449-8920',
-  linkedin: 'https://www.linkedin.com/in/prathyush-prathipati',
-  github: 'https://github.com/', // Replace with your actual GitHub URL
+  linkedin: 'https://www.linkedin.com/in/prathyush-prathipati-336054104',
+  github: 'https://github.com/prathyush892', // Replace with your actual GitHub URL
   availableFor: 'Available for work · Toronto, ON',
   bio: [
     'A React developer with 8+ years of experience delivering clean, performant, and accessible web applications across fintech, real estate, and enterprise sectors.',
@@ -196,7 +196,7 @@ export const contactLinks = [
     icon: 'in',
     label: 'LinkedIn',
     value: 'linkedin.com/in/prathyush',
-    href: 'https://www.linkedin.com/in/prathyush-prathipati',
+    href: 'https://www.linkedin.com/in/prathyush-prathipati-336054104',
   },
   {
     icon: '⬡',

@@ -63,8 +63,7 @@ All content is in **`src/data/portfolioData.js`**:
 - `skillCards`   — edit tech stack pills
 - `marqueeItems` — scrolling tech banner
 
-### Add your photo
-Replace the initials placeholder in `About.jsx`:
+
 ```jsx
 // src/components/About.jsx  →  photoPlaceholder div
 <img src="/photo.jpg" alt="Prathyush" className={styles.photo} />
@@ -77,15 +76,11 @@ In `portfolioData.js`:
 github: 'https://github.com/YOUR_USERNAME',
 ```
 
-### Add your resume download
-In `portfolioData.js` add `resumeUrl`, then update the button in `Contact.jsx`:
 ```jsx
 <a href={personalInfo.resumeUrl} download className="btn-primary">
   Download Resume
 </a>
 ```
-Drop your `resume.pdf` in `/public`.
-
 ---
 
 ## 🌐 Deployment
