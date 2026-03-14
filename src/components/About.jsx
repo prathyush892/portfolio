@@ -25,7 +25,17 @@ export default function About() {
           <div className={`reveal ${styles.visualCol}`} ref={cardRef}>
             <div className={styles.card}>
               <div className={styles.photoPlaceholder}>
-                <span className={styles.initials}>PP</span>
+                {/* <span className={styles.initials}>PP</span> */}
+                <img
+                  src="/profile.jpg"
+                  alt="Prathyush Prathipati"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                    borderRadius: 'inherit',
+                  }}
+                />  
               </div>
               <div className={styles.cardName}>{personalInfo.name}</div>
               <div className={styles.cardRole}>{'// React Developer & UI Engineer'}</div>
