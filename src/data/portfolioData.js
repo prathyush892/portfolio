@@ -169,7 +169,7 @@ export const projects = [
       { label: 'REST API', color: 'blue' },
     ],
     accentColor: 'var(--accent4)',
-    link: '#',
+    link: 'https://property-vista-omega.vercel.app/',
   },
 ];
 
